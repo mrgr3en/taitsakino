@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Filmitsitaatide generaator</title>
+      <meta charset="UTF-8">
+      <link rel="shortcut icon" type="image/jpg" href="pics/favicon.jpg"/>
+      <link rel="stylesheet" href="main.css">
+      <script src="modal.js"></script>
+      <script src="https://kit.fontawesome.com/639c50220f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class = "container">
+        <div class ="empty"></div>
+        <div class = "heading">Suvaliste tsitaatide generaator</div>
+        <div class = "download">
+          <i id ="dwn_btn" onclick="modalOpen()" class="fas fa-upload"></i>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <h1>Vali üleslaetav pilt</h1>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Lae ülesse" name="submit">
+          </form>
+        </div>
+      </div>
+      <div class = "mainBody">
+        <div class = "bg_left"><img id = "bg_left" src="pics/movie_reel.png" alt="moviereel"></div>
+        <div class = "main_text">
+          <p>See siin on suvaliste filmi- ja teletsitaatide varamu. Vajuta vaid nupule "GENEREERI"
+              ja meie andmebaas viskab sulle ühe suvalise tsitaadi Eesti filmi- ja telemaastikult</p>
+          <button class = generate type="button" name="button" onclick="window.location.href ='pic.php'">Genereeri</button>
+          <p>Sul on samuti lisada mõni kuld Eesti filmiklassikast või mõni tabav mõtisklus
+              Rannamaja asjaosalistelt? Lae üles tsitaat pildiga ja me lisame selle andmebaasi!</p>
+          <i id ="dwn_btn" onclick="modalOpen()" class="fas fa-upload"></i>
+        </div>
+        <div class = "bg_right"><img id = "bg_right" src="pics/movie_reel.png" alt="moviereel"></div>
+      </div>
+    </body>
+  </html>
