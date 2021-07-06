@@ -5,15 +5,14 @@
       <meta charset="UTF-8">
       <link rel="shortcut icon" type="image/jpg" href="pics/favicon.jpg"/>
       <link rel="stylesheet" href="main.css">
-      <script src="modal.js"></script>
       <script src="https://kit.fontawesome.com/639c50220f.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <div class = "container">
         <div class ="empty"></div>
-        <div class = "heading">Suvaliste tsitaatide generaator</div>
+        <div id = "titleHead" class = "heading"></div>
         <div class = "download">
-          <i id ="dwn_btn" onclick="modalOpen()" class="fas fa-upload"></i>
+          <i id ="dwn_btn" onclick="modalOpen()" class="fas fa-upload" name = "dwn_btn"></i>
         </div>
       </div>
       <div id="myModal" class="modal">
@@ -39,4 +38,5 @@
         <div class = "bg_right"><img id = "bg_right" src="pics/movie_reel.png" alt="moviereel"></div>
       </div>
     </body>
+      <script src="modal.js"></script>
   </html>
